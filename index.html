@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script  src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Phone Menu</title>
 </head>
-<body>
+<body  style="background-image: url(assets/base.png); background-size: cover; background-position: center;" >
+    <!--Main Container-->
+    
+    <div class="flex flex-col w-full h-[100%]">
+        <!-- Nav-bar -->
+        <div class="flex h-[10%]">
+            <div class="flex flex-col w-[10%] h-[10%] ml-24 m-4 p-4 ">
+                <h1 class="font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-800">home</h1>
+                <h1 class="font-semibold text-gray-500 hover:cursor-pointer hover:text-gray-800">search</h1>
+            </div>
+            <div class="h-[500px] w-[500px] -ml-20">
+                <img src="assets/bgLamp.png" alt="lamp">
+            </div>
+            <div>
+                <h1 class="m-4 p-4 text-gray-900 font-semibold rounded-lg text-xl hover:cursor-pointer hover:text-gray-800">PHONE GARAGE.</h1>
+            </div>
+            <div class="flex gap-3 items-center rounded-full ml-[10%] m-4 p-4 w-[9%] h-10 mt-6 border border-solid border-gray-600 hover:cursor-pointer hover:shadow-lg" >
+                <i class="fa-brands fa-apple text-2xl text-gray-600"></i>
+                <h1 class="font-semibold text-sm text-gray-600">App Store</h1>
+            </div>
+            <div class="flex gap-3 items-center rounded-full m-4 p-4 w-[9%] h-10 mt-6 border border-solid border-gray-600 hover:cursor-pointer hover:shadow-lg" >
+                <i class="fa-brands fa-google-play text-2xl text-gray-600"></i>
+                <h1 class="font-semibold text-sm text-gray-600">Play Store</h1>
+            </div>
+
+        </div>
+        <!-- Hero Section -->
+        <div class="flex w-[80%] h-40 m-2">
+            <div class="flex items-center ml-[10%] -mt-[8%]"> 
+                <h1 class="text-[30px] font-semibold text-gray-600 p-4">Search Your Phone</h1>
+                <input type="text" placeholder="eg: oppo, iphone" class="rounded-full w-[200px] h-10 m-4 p-4">
+                <button type="button" class="w-24 p-2 text-white bg-gray-600 hover:bg-gray-300  rounded-xl hover:shadow-xl hover:text-black">Submit</button>
+            </div>
+            <div class="flex -mt-[32%] ml-[25%]">
+                <img src="assets/iPhone 12 Pro Max.png" alt="">
+                <img src="assets/OnePlus 8 Pro.png">
+            </div>
+        </div>
+        
+       
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
