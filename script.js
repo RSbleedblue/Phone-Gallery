@@ -15,7 +15,7 @@ function populateData(phoneData){
     showcaseContainer.innerHTML = '';
     phoneData.forEach(eachPhone => {
         const parentDiv = document.createElement("div");
-        parentDiv.className = "w-[20%] h-[90%] m-2 p-2 rounded-2xl flex flex-col items-center shadow-xl mb-10";
+        parentDiv.className = "w-[20%] h-[90%] m-2 p-2 rounded-2xl flex flex-col items-center shadow-lg hover:shadow-xl hover:cursor-pointer  mb-10";
 
         const imgDiv = document.createElement("div");
         imgDiv.className = "h-24 w-24 mb-14";
@@ -34,7 +34,7 @@ function populateData(phoneData){
 
         const button = document.createElement("button");
         button.type = 'button';
-        button.className = "m-2 p-2  rounded-full border border-solid border-gray-500 hover:shadow-xl";
+        button.className = "m-2 p-2  rounded-full border border-solid border-gray-500";
         button.textContent = "Show Details";
         button.onclick = `modalDetail(${eachPhone.slug})`;
 
@@ -56,10 +56,3 @@ function modalDetail(phoneSlug){
     console.log("loaded");
     my_modal.showModal();
 }
-const showcaseInput = document.getElementById('inputVal');
-showcaseInput.addEventListener('keydown', (event) => {
-    if (event.code === 'Enter') {
-        event.preventDefault();
-        findPhone();
-    }
-});
